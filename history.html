@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagine Dragons — История</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        nav {
+            background-color: #222;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #ffcc00;
+            color: #222;
+        }
+        
+        header {
+            background-color: #222;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .content {
+            max-width: 800px;
+            margin: 0 auto 40px;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        
+        .history-image {
+            width: 100%;
+            max-height: 450px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        
+        h1, h2 {
+            color: #222;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            border-bottom: 2px solid #ffcc00;
+            padding-bottom: 10px;
+        }
+        
+        .timeline {
+            position: relative;
+            margin: 30px 0;
+            padding-left: 30px;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #ffcc00;
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 25px;
+            padding-left: 30px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 2px;
+            top: 5px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #ffcc00;
+            border: 3px solid #222;
+        }
+        
+        .timeline-year {
+            font-weight: bold;
+            color: #222;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        
+        .timeline-content {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 3px solid #ffcc00;
+        }
+  
+        
+        @media (max-width: 768px) {
+            nav a {
+                display: inline-block;
+                margin: 5px;
+                padding: 6px 10px;
+                font-size: 14px;
+            }
+            
+            .content {
+                padding: 20px;
+                margin: 0 15px 30px;
+            }
+            
+            .history-image {
+                max-height: 350px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            nav a {
+                display: block;
+                margin: 5px auto;
+                max-width: 200px;
+            }
+            
+            .timeline {
+                padding-left: 20px;
+            }
+            
+            .timeline-item {
+                padding-left: 25px;
+            }
+        }
+        footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0 auto;
+    display: block;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="site.html">Главная</a>
+        <a href="index.html">Общая информация</a>
+        <a alighn=center>История</a>
+        <a href="disc.html">Дискография</a>
+        <a href="film.html">Фильмография</a>
+        <a href="links.html">Источники</a>
+        <a href="order.html"> Заказать альбом</a>
+        <a href="contact.html"> Контакты</a>
+
+    </nav>
+
+    <header>
+        <h1>Imagine Dragons</h1>
+    </header>
+
+    <div class="content">
+        <!-- Начало -->
+        <div class="history-section">
+          <h2>  <a href="https://ru.wikipedia.org/wiki/Imagine_Dragons" target="_balnk" class="dowland">Начало</a> </h2>
+            <p>Группа Imagine Dragons была образована в 2008 году в Лас-Вегасе, когда вокалист Дэн Рейнольдс познакомился с гитаристом Уэйном Сермоном. Изначально группа называлась "Ragged Insomnia" и выступала в местных клубах.</p>
+            
+            <div class="highlight">
+                <strong>Интересный факт:</strong>
+                Название "Imagine Dragons" — это анаграмма, смысл которой участники держат в секрете. По одной из версий, это отсылка к фразе "Ragged Insomnia", которую они использовали ранее.
+            </div>
+        </div>
+        
+        <!-- Название -->
+        <div class="history-section">
+             <h2>  <a href="https://ru.wikipedia.org/wiki/Imagine_Dragons" target="_balnk" class="dowland">Название и первый состав</a> </h2>
+            <p>В 2009 году к группе присоединились басист Бен МакКи и барабанщик Дэниэл Платцман, завершив формирование основного состава. Именно в это время коллектив окончательно сменил название на Imagine Dragons.</p>
+            <p>Первые выступления группы проходили в небольших клубах Лас-Вегаса, где они вырабатывали свой уникальный стиль, сочетающий альтернативный рок с элементами электронной музыки.</p>
+        </div>
+        
+        <!-- Первые гастроли -->
+        <div class="history-section">
+           <h2>  <a href="https://ru.wikipedia.org/wiki/Imagine_Dragons" target="_balnk" class="dowland">Первые гастроли</a> </h2>
+            <p>В 2010-2011 годах группа начала первые серьезные гастроли по США. Они выступали как разогревающая группа для более известных исполнителей, что помогло им наработать сценический опыт.</p>
+            
+            <div class="highlight">
+                <strong>Важный момент:</strong>
+                В 2011 году Imagine Dragons самостоятельно выпустили три EP: «Imagine Dragons», «Hell and Silence» и «It's Time», которые привлекли внимание звукозаписывающих компаний.
+            </div>
+        </div>
+        
+        <!-- Первый контракт -->
+        <div class="history-section">
+ <h2>  <a href="https://ru.wikipedia.org/wiki/Imagine_Dragons" target="_balnk" class="dowland">Первый контракт</a> </h2>  
+           <p>В 2012 году группа подписала контракт с Interscope Records и выпустила EP «Continued Silence», который дебютировал на 40-м месте в Billboard 200. Главный сингл "It's Time" стал их первым хитом.</p>
+            <p>Этот успех привел к записи дебютного студийного альбома «Night Visions», который вышел в сентябре 2012 года и занял 2-е место в Billboard 200.</p>
+        </div>
+        
+        <!-- Последние альбомы -->
+        <div class="history-section">
+ <h2>  <a href="https://ru.wikipedia.org/wiki/Imagine_Dragons" target="_balnk" class="dowland">Последние альбомы</a> </h2>        
+     <p>После оглушительного успеха «Night Visions» группа выпустила еще несколько успешных альбомов:</p>
+            <ul>
+                <li><strong>Smoke + Mirrors (2015)</strong> - более экспериментальный звук</li>
+                <li><strong>Evolve (2017)</strong> - с хитами "Believer" и "Thunder"</li>
+                <li><strong>Origins (2018)</strong> - компаньон к предыдущему альбому</li>
+                <li><strong>Mercury - Act 1 (2021)</strong> - посвящен памяти друга группы</li>
+                <li><strong>Mercury - Act 2 (2022)</strong> - завершение концептуальной дилогии</li>
+            </ul>
+            
+            <div class="highlight">
+                <strong>Современный этап:</strong>
+                В 2023-2024 годах группа продолжает мировые гастроли и работает над новым материалом, сохраняя статус одного из самых популярных рок-коллективов мира.
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 Все права защищены. Учебный проект.
+    </footer>
+</body>
+</html>

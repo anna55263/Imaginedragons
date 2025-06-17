@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Imagine Dragons — Полная дискография</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .album-cover {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-right: 20px;
+            float: left;
+        }
+        .album {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            overflow: hidden;
+        }
+        .album:last-child {
+            border-bottom: none;
+        }
+        .album-title {
+            color: #333;
+            margin-top: 0;
+            font-size: 24px;
+        }
+        .album-year {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        .tracklist {
+            columns: 2;
+            column-gap: 30px;
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        .tracklist li {
+            margin-bottom: 5px;
+            break-inside: avoid;
+        }
+        .links {
+            clear: both;
+            margin-top: 15px;
+        }
+        .links a {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 8px 15px;
+            background-color: #1DB954;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .links a.download {
+            background-color: #007BFF;
+        }
+        .links a.apple {
+            background-color: #FC3C44;
+        }
+          nav {
+            background-color: #222;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+         nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+        nav a:hover {
+            background-color: #ffcc00;
+            color: #222;
+        }
+           
+        .album-description {
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        @media (max-width: 600px) {
+            .album-cover {
+                width: 100%;
+                height: auto;
+                float: none;
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            .tracklist {
+                columns: 1;
+            }
+        }
+        footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0 auto;
+    display: block;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="site.html">Главная</a>
+        <a href="index.html">Общая информация</a>
+        <a href="history.html">История</a>
+        <a alighn=center>Дискография</a>
+        <a href="film.html">Фильмография</a>
+        <a href="links.html">Источники</a>
+        <a href="order.html"> Заказать альбом</a>
+        <a href="contact.html"> Контакты</a>
+
+    </nav>
+
+    <header>
+        <h1>Imagine Dragons</h1>
+        <p>Полная дискография</p>
+    </header>
+    
+    <div class="content">
+        
+        <!-- Night Visions -->
+        <div class="album">
+            <img src="disc1.jpg" class="album-cover" alt="Night Visions">
+            <h2 class="album-title">Night Visions</h2>
+            <div class="album-year">2012</div>
+            <p class="album-description">Дебютный студийный альбом, принёсший группе мировую известность. Включает хиты «Radioactive» и «Demons».</p>
+            <ul class="tracklist">
+                <li>Radioactive</li>
+                <li>Tiptoe</li>
+                <li>It's Time</li>
+                <li>Demons</li>
+                <li>On Top of the World</li>
+                <li>Amsterdam</li>
+                <li>Hear Me</li>
+                <li>Every Night</li>
+                <li>Bleeding Out</li>
+                <li>Underdog</li>
+                <li>Nothing Left to Say</li>
+                <li>Rocks (Bonus Track)</li>
+                <li>Working Man (Bonus Track)</li>
+                <li>Cha-Ching (Bonus Track)</li>
+            </ul>
+            <div class="links">
+                <a href="https://archive.org/details/imaginedragonsni0000imag" target="_blank" class="download">Скачать</a>
+                <a href="https://open.spotify.com/album/2pRcJ9LlWvDUtqz1xdIYUs" target="_blank">Spotify</a>
+                <a href="https://music.apple.com/album/night-visions/1440800894" target="_blank" class="apple">Apple Music</a>
+            </div>
+        </div>
+        
+        <!-- Smoke + Mirrors -->
+        <div class="album">
+            <img src="disc2.jpg" class="album-cover" alt="Smoke + Mirrors">
+            <h2 class="album-title">Smoke + Mirrors</h2>
+            <div class="album-year">2015</div>
+            <p class="album-description">Второй студийный альбом с более экспериментальным звучанием и глубокими текстами.</p>
+            <ul class="tracklist">
+                <li>Shots</li>
+                <li>Gold</li>
+                <li>Smoke and Mirrors</li>
+                <li>I'm So Sorry</li>
+                <li>I Bet My Life</li>
+                <li>Polaroid</li>
+                <li>Friction</li>
+                <li>It Comes Back to You</li>
+                <li>Dream</li>
+                <li>Trouble</li>
+                <li>Summer</li>
+                <li>Hopeless Opus</li>
+                <li>The Fall</li>
+            </ul>
+            <div class="links">
+                <a href="https://101.ru/tracklist/artist/15649/album/7503/track/337650" target="_blank" class="download">Скачать</a>
+                <a href="https://open.spotify.com/album/2igZ0NqX6fE9WczX9sq0OL" target="_blank">Spotify</a>
+                <a href="https://music.apple.com/album/smoke-mirrors/976248362" target="_blank" class="apple">Apple Music</a>
+            </div>
+        </div>
+        
+        <!-- Evolve -->
+        <div class="album">
+            <img src="disc3.jpg" class="album-cover" alt="Evolve">
+            <h2 class="album-title">Evolve</h2>
+            <div class="album-year">2017</div>
+            <p class="album-description">Третий альбом с электронным звучанием, включающий мегахиты «Believer» и «Thunder».</p>
+            <ul class="tracklist">
+                <li>Next to Me</li>
+                <li>I Don't Know Why</li>
+                <li>Whatever It Takes</li>
+                <li>Believer</li>
+                <li>Walking the Wire</li>
+                <li>Rise Up</li>
+                <li>I'll Make It Up to You</li>
+                <li>Yesterday</li>
+                <li>Mouth of the River</li>
+                <li>Thunder</li>
+                <li>Start Over</li>
+                <li>Dancing in the Dark</li>
+            </ul>
+            <div class="links">
+                <a href="https://mp3party.net/collection/новый%20альбом%20imagine%20dragons%20-%20evolve" target="_blank" class="download">Скачать</a>
+                <a href="https://open.spotify.com/album/7yCPwWs66K8Ba5lFuU2bcx" target="_blank">Spotify</a>
+                <a href="https://music.apple.com/album/evolve/1213851687" target="_blank" class="apple">Apple Music</a>
+            </div>
+        </div>
+        
+        <!-- Origins -->
+        <div class="album">
+            <img src="disc4.jpg" class="album-cover" alt="Origins">
+            <h2 class="album-title">Origins</h2>
+            <div class="album-year">2018</div>
+            <p class="album-description">Четвёртый альбом, выпущенный как компаньон к Evolve, с более экспериментальным звучанием.</p>
+            <ul class="tracklist">
+                <li>Natural</li>
+                <li>Boomerang</li>
+                <li>Machine</li>
+                <li>Cool Out</li>
+                <li>Bad Liar</li>
+                <li>West Coast</li>
+                <li>Zero (из "Ральф против интернета")</li>
+                <li>Bullet in a Gun</li>
+                <li>Digital</li>
+                <li>Only</li>
+                <li>Stuck</li>
+                <li>Love</li>
+            </ul>
+            <div class="links">
+                <a href="https://mp3party.net/album/117214" target="_blank" class="download">Скачать</a>
+                <a href="https://open.spotify.com/album/3JfSxDfmwS5OeHPwLSkrfr" target="_blank">Spotify</a>
+                <a href="https://music.apple.com/album/origins/1438677453" target="_blank" class="apple">Apple Music</a>
+            </div>
+        </div>
+        
+        <!-- Mercury - Act 1 -->
+        <div class="album">
+            <img src="disc5.jpg" class="album-cover" alt="Mercury - Act 1">
+            <h2 class="album-title">Mercury - Act 1</h2>
+            <div class="album-year">2021</div>
+            <p class="album-description">Пятый альбом, посвящённый памяти близкого друга группы. Более личный и эмоциональный.</p>
+            <ul class="tracklist">
+                <li>My Life</li>
+                <li>Lonely</li>
+                <li>Wrecked</li>
+                <li>Monday</li>
+                <li>#1</li>
+                <li>Easy Come Easy Go</li>
+                <li>Giants</li>
+                <li>It's Ok</li>
+                <li>Dull Knives</li>
+                <li>Follow You</li>
+                <li>Cutthroat</li>
+                <li>No Time For Toxic People</li>
+                <li>One Day</li>
+            </ul>
+            <div class="links">
+                <a href="https://mp3party.net/album/180260" target="_blank" class="download">Скачать</a>
+                <a href="https://open.spotify.com/album/6DdU5f52hpc2gfeLjK374Y" target="_blank">Spotify</a>
+                <a href="https://music.apple.com/album/mercury-act-1/1576341347" target="_blank" class="apple">Apple Music</a>
+            </div>
+        </div>
+        
+        <!-- Mercury - Act 2 -->
+        <div class="album">
+            <img src="disc6.jpg" class="album-cover" alt="Mercury - Act 2">
+            <h2 class="album-title">Mercury - Act 2</h2>
+            <div class="album-year">2022</div>
+            <p class="album-description">Шестой альбом, завершающий Mercury-серию. Самый масштабный проект группы на сегодня.</p>
+            <ul class="tracklist">
+                <li>Bones</li>
+                <li>Symphony</li>
+                <li>Sharks</li>
+                <li>I Don't Like Myself</li>
+                <li>Blur</li>
+                <li>Higher Ground</li>
+                <li>Crushed</li>
+                <li>Take It Easy</li>
+                <li>Waves</li>
+                <li>I'm Happy</li>
+                <li>Ferris Wheel</li>
+                <li>Peace of Mind</li>
+                <li>Sirens</li>
+                <li>Tied</li>
+                <li>Younger</li>
+                <li>I Wish</li>
+                <li>Continual</li>
+                <li>They Don't Know You Like I Do</li>
+            </ul>
+            <div class="links">
+                <a href="https://mp3party.net/album/203053" target="_blank" class="download">Скачать</a>
+                <a href="https://open.spotify.com/album/5gCA3ANOqxC4ED1jVsDAMO" target="_blank">Spotify</a>
+                <a href="https://music.apple.com/album/mercury-act-2/1633575633" target="_blank" class="apple">Apple Music</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 Все права защищены. Учебный проект.
+    </footer>
+</body>
+</html>

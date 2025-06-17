@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagine Dragons — Фильмография</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        nav {
+            background-color: #222;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #ffcc00;
+            color: #222;
+        }
+        
+        header {
+            background-color: #222;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .content {
+            max-width: 1000px;
+            margin: 0 auto 40px;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        
+        h1, h2 {
+            color: #222;
+            margin-bottom: 25px;
+        }
+        
+        h2 {
+            border-bottom: 2px solid #ffcc00;
+            padding-bottom: 10px;
+        }
+        
+        .section-intro {
+            margin-bottom: 30px;
+            font-size: 17px;
+            line-height: 1.7;
+        }
+        
+        .media-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .media-item {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #eee;
+        }
+        
+        .media-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .media-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .play-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            background-color: rgba(255, 204, 0, 0.8);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .play-icon::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            border-top: 15px solid transparent;
+            border-left: 25px solid white;
+            border-bottom: 15px solid transparent;
+            margin-left: 5px;
+        }
+        
+        .image-wrapper {
+            position: relative;
+        }
+        
+        .image-wrapper:hover .play-icon {
+            opacity: 1;
+        }
+        
+        .media-info {
+            padding: 20px;
+        }
+        
+        .media-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #222;
+        }
+        
+        .media-year {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        .media-desc {
+            font-size: 14px;
+            color: #444;
+            line-height: 1.5;
+        }
+        
+        .media-desc strong {
+            color: #333;
+        }
+        
+        .category-title {
+            margin: 40px 0 20px;
+            font-size: 22px;
+            color: #444;
+            padding-left: 15px;
+            border-left: 4px solid #ffcc00;
+        }
+        
+        @media (max-width: 768px) {
+            nav a {
+                display: inline-block;
+                margin: 5px;
+                padding: 6px 10px;
+                font-size: 14px;
+            }
+            
+            .content {
+                padding: 20px;
+                margin: 0 15px 30px;
+            }
+            
+            .media-container {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            nav a {
+                display: block;
+                margin: 5px auto;
+                max-width: 200px;
+            }
+            
+            .media-image {
+                height: 180px;
+            }
+        }
+        footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0 auto;
+    display: block;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="site.html">Главная</a>
+        <a href="index.html">Общая информация</a>
+        <a href="history.html">История</a>
+        <a href="disc.html">Дискография</a>
+        <a alighn=center>Фильмография</a>
+        <a href="links.html">Источники</a>
+        <a href="order.html"> Заказать альбом</a>
+        <a href="contact.html"> Контакты</a>
+
+    </nav>
+
+    <header>
+        <h1>Imagine Dragons: Фильмы и клипы</h1>
+    </header>
+
+    <div class="content">
+        <div class="section-intro">
+            <p>Imagine Dragons создали музыку для многих известных фильмов и выпустили потрясающие клипы. Здесь представлены ключевые моменты их визуального творчества.</p>
+        </div>
+        
+        <h2 class="category-title">Саундтреки в фильмах</h2>
+        
+        <div class="media-container">
+            <!-- Трансформеры -->
+            <div class="media-item">
+                <div class="image-wrapper">
+                    <img src="film1.jpg" alt="Кадр из Трансформеры" class="media-image">
+                    <div class="play-icon"></div>
+                </div>
+                <div class="media-info">
+                    <div class="media-title">Трансформеры: Последний рыцарь</div>
+                    <div class="media-year">2017</div>
+                    <div class="media-desc">
+                        <strong>Песня:</strong> "Battle Cry"<br>
+                        Специально написанная для фильма композиция звучит в кульминационных боевых сценах.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Отряд самоубийц -->
+            <div class="media-item">
+                <div class="image-wrapper">
+                    <img src="film2.jpg" alt="Кадр из Отряда самоубийц" class="media-image">
+                    <div class="play-icon"></div>
+                </div>
+                <div class="media-info">
+                    <div class="media-title">Отряд самоубийц</div>
+                    <div class="media-year">2016</div>
+                    <div class="media-desc">
+                        <strong>Песня:</strong> "Sucker for Pain"<br>
+                        Коллаборация с Lil Wayne и Wiz Khalifa стала одной из главных тем фильма.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Варкрафт -->
+            <div class="media-item">
+                <div class="image-wrapper">
+                    <img src="film3.jpg" alt="Кадр из Варкрафта" class="media-image">
+                    <div class="play-icon"></div>
+                </div>
+                <div class="media-info">
+                    <div class="media-title">Варкрафт</div>
+                    <div class="media-year">2016</div>
+                    <div class="media-desc">
+                        <strong>Песня:</strong> "Warriors"<br>
+                        Эпичная композиция для кинопостановки культовой игры.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Ральф против интернета -->
+            <div class="media-item">
+                <div class="image-wrapper">
+                    <img src="film4.jpg" alt="Кадр из Ральфа" class="media-image">
+                    <div class="play-icon"></div>
+                </div>
+                <div class="media-info">
+                    <div class="media-title">Ральф против интернета</div>
+                    <div class="media-year">2018</div>
+                    <div class="media-desc">
+                        <strong>Песня:</strong> "Zero"<br>
+                        Оптимистичный трек, специально созданный для мультфильма.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <h2 class="category-title">Официальные клипы</h2>
+        
+        <div class="media-container">
+            <!-- Radioactive -->
+            <div class="media-item">
+                <div class="image-wrapper">
+                    <img src="film5.jpg" alt="Кадр из клипа Radioactive" class="media-image">
+                    <div class="play-icon"></div>
+                </div>
+                <div class="media-info">
+                    <div class="media-title">Radioactive</div>
+                    <div class="media-year">2012</div>
+                    <div class="media-desc">
+                        Сюрреалистичный клип с кукольными боями стал визитной карточкой группы (1.5 млрд просмотров).
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Believer -->
+            <div class="media-item">
+                <div class="image-wrapper">
+                    <img src="film6.jpg" alt="Кадр из клипа Believer" class="media-image">
+                    <div class="play-icon"></div>
+                </div>
+                <div class="media-info">
+                    <div class="media-title">Believer</div>
+                    <div class="media-year">2017</div>
+                    <div class="media-desc">
+                        Мощное видео с драматичной историей противостояния (2 млрд просмотров).
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Thunder -->
+            <div class="media-item">
+                <div class="image-wrapper">
+                    <img src="film7.jpg" alt="Кадр из клипа Thunder" class="media-image">
+                    <div class="play-icon"></div>
+                </div>
+                <div class="media-info">
+                    <div class="media-title">Thunder</div>
+                    <div class="media-year">2017</div>
+                    <div class="media-desc">
+                        Яркий клип с неоновой эстетикой и элементами научной фантастики (1.3 млрд просмотров).
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Enemy -->
+            <div class="media-item">
+                <div class="image-wrapper">
+                    <img src="film8.jpg" alt="Кадр из клипа Enemy" class="media-image">
+                    <div class="play-icon"></div>
+                </div>
+                <div class="media-info">
+                    <div class="media-title">Enemy (с JID)</div>
+                    <div class="media-year">2021</div>
+                    <div class="media-desc">
+                        Стилизация под анимационный сериал "Аркейн", для которого была написана песня.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 Все права защищены. Учебный проект.
+    </footer>
+</body>
+</html>
